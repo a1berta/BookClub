@@ -34,7 +34,52 @@
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
+        </div>
+<h3>OR</h3>
+        <form action="/action_page.php">
+            <div class="input-wrapper">
+                <input type="text" placeholder="username" required>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="text" placeholder="email address" required>
+            </div>
+            <div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="password" required>
+            </div>
+            <div class="input-wrapper">
+                <input type="date" placeholder="DOB" required>
+            </div>
+            <div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="location" required>
+                    <div class="input-wrapper">
+                        <input type="checkbox" name="site terms">
+                        <label for="site terms">I agree to the terms and conditions of the site</label><br><br>
+                        <input type="submit" value="Submit" placeholder="Create an account">
+            </div>
+        </form>
+
+        <h4>Already have an account?</h4>
+        <a href="">Log In</a><br>
+
+        <div class="profile pic"></div>
+        <span>
+            Choose a profile picture
+            <input type="file"
+            id="photo"
+            accept=".png, .jpeg, .jpg">
+            </span>
+        <script>
+            var loadfile = function (event) {
+                var image = document.getElementById ('output');
+                image.scr = url.createObjectURL(event.target.files[0]);
+            };
+        </script>
 
         </div>
+
+
 </body>
 </html>
